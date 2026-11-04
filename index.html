@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ORBIS · 可交互曼陀罗</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    min-height:100vh;
+    background:#05070d;
+    color:#e8eef4;
+    font-family:"Segoe UI","Microsoft YaHei",system-ui,sans-serif;
+    padding:64px 24px 80px;
+  }
+  header{max-width:1080px;margin:0 auto 48px}
+  h1{
+    font-size:clamp(28px,4vw,44px);
+    font-weight:500;
+    letter-spacing:.14em;
+    margin-bottom:14px;
+  }
+  h1 span{
+    background:linear-gradient(90deg,#7ee787,#4fc3f7,#b388ff);
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+  .lede{
+    font-size:15px;line-height:1.8;color:#8b98a8;max-width:640px;
+  }
+  .grid{
+    max-width:1080px;margin:0 auto;
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;
+  }
+  a.card{
+    display:block;text-decoration:none;color:inherit;
+    background:#0c121c;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;overflow:hidden;
+    transition:transform .25s ease,border-color .25s ease;
+  }
+  a.card:hover{transform:translateY(-4px);border-color:rgba(126,231,135,.4)}
+  .thumb{
+    aspect-ratio:16/10;width:100%;object-fit:cover;display:block;
+    background:#080c14;
+  }
+  .meta{padding:18px 20px 20px}
+  .meta h2{font-size:17px;font-weight:500;margin-bottom:6px;letter-spacing:.06em}
+  .meta p{font-size:13px;color:#78859a;line-height:1.6}
+  footer{
+    max-width:1080px;margin:56px auto 0;
+    font-size:12px;color:#4e5a6b;text-align:center;letter-spacing:.08em;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>ORBIS <span>可交互曼陀罗</span></h1>
+  <p class="lede">原生 Canvas 实时绘制。移动鼠标或滑动屏幕改变花纹密度与色彩，作品会随交互持续演化。共 5 个主题变体。</p>
+</header>
+
+<main class="grid">
+  <a class="card" href="_v_hero.html">
+    <img class="thumb" src="_orbis_hero.png" alt="主视觉变体" loading="lazy">
+    <div class="meta"><h2>主视觉 · Hero</h2><p>基准配色，冷调蓝紫，最均衡的层次结构。</p></div>
+  </a>
+  <a class="card" href="_v_burst.html">
+    <img class="thumb" src="_orbis_burst.png" alt="爆裂变体" loading="lazy">
+    <div class="meta"><h2>爆裂 · Burst</h2><p>高对比金色冲击，密集放射结构。</p></div>
+  </a>
+  <a class="card" href="_v_ice.html">
+    <img class="thumb" src="_orbis_ice.png" alt="冰晶变体" loading="lazy">
+    <div class="meta"><h2>冰晶 · Ice</h2><p>低饱和冷白，晶体状细密分形。</p></div>
+  </a>
+  <a class="card" href="_v_jade.html">
+    <img class="thumb" src="_orbis_jade.png" alt="翡翠变体" loading="lazy">
+    <div class="meta"><h2>翡翠 · Jade</h2><p>东方青绿，柔和渐层与呼吸感节奏。</p></div>
+  </a>
+  <a class="card" href="_v_rose.html">
+    <img class="thumb" src="_orbis_rose.png" alt="玫瑰变体" loading="lazy">
+    <div class="meta"><h2>玫瑰 · Rose</h2><p>暖粉调，花瓣式叠层展开。</p></div>
+  </a>
+</main>
+
+<footer>交互图形作品集 · Canvas Generative Art</footer>
+</body>
+</html>
